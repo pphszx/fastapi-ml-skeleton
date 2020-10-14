@@ -6,7 +6,7 @@ from fastapi_skeleton.schemas.iris import (
     IrisPredictionPayload,
     IrisPredictionResult,
 )
-from fastapi_skeleton.model import IrisModel
+from fastapi_skeleton.ml import IrisModel
 
 router = APIRouter()
 

@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from loguru import logger
 
 from fastapi_skeleton.core.config import DEFAULT_MODEL_PATH
-from fastapi_skeleton.model import dct_model
+from fastapi_skeleton.ml import dct_model
 
 
 def _startup_model(app: FastAPI) -> None:

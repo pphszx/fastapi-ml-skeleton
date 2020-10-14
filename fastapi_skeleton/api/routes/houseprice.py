@@ -6,7 +6,7 @@ from fastapi_skeleton.schemas.houseprice import (
     HousePredictionPayload,
     HousePredictionResult,
 )
-from fastapi_skeleton.model import HousePriceModel
+from fastapi_skeleton.ml import HousePriceModel
 
 router = APIRouter()
 
@@ -19,7 +19,7 @@ def post_predict(
     # authenticated: bool = Depends(security.validate_request),
     block_data: HousePredictionPayload = None,
 ) -> HousePredictionResult:
-
+    """aaa"""
     model: HousePriceModel = request.app.state.model["houseprice"]
     prediction: HousePredictionResult = model.predict(block_data)
 

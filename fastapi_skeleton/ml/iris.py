@@ -3,7 +3,7 @@ from typing import List
 import numpy as np
 from loguru import logger
 
-from fastapi_skeleton.model.base import BaseModel
+from fastapi_skeleton.ml.base import BaseModel
 from fastapi_skeleton.schemas.iris import (
     IrisPredictionPayload,
     payload_to_list,
